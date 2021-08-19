@@ -1,3 +1,5 @@
+/*-----------GENERAL STYLES ---------------- */
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -17,6 +19,7 @@ h1,
 h2 {
   font-family: "Poppins", sans-serif;
   color: var(--color-secondary);
+  font-weight: 600;
 }
 
 button {
@@ -27,7 +30,7 @@ button {
   text-align: center;
 }
 
-.active:hover{
+.active:hover {
   filter: opacity(50%);
 }
 p {
@@ -38,6 +41,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/*---------------The Top Section--------------*/
 .top {
   background: url(../images/bg-hero-desktop.svg), var(--color--pale-cyan);
   background-position: top;
@@ -45,7 +49,7 @@ body {
   background-size: cover;
   padding: 4rem 5rem;
 }
-/* This is a special  Class for displays of Row Flex*/
+/*------------This is a special  Class for displays of Row Flex-----------------*/
 .flex--row {
   display: flex;
   flex-direction: row;
@@ -53,7 +57,6 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-
 
 .navbar__image {
   width: 15rem;
@@ -70,7 +73,6 @@ body {
   font-weight: 700;
 }
 
-
 .hero {
   margin-top: 5rem;
 }
@@ -81,7 +83,6 @@ body {
 .hero__text h1 {
   font-size: 3.5rem;
   line-height: 1.2;
-  font-weight: 700;
   margin-bottom: 3rem;
 }
 .hero__text p {
@@ -109,7 +110,7 @@ body {
   .top {
     padding: 2rem 3rem;
   }
-  /* This is a special class for Column Flex */
+  /*--------------This is a special class for Column Flex----------------*/
   .flex--col {
     display: flex;
     flex-direction: column;
@@ -132,8 +133,68 @@ body {
   }
 }
 
+/*--------------End of the Top Section-------------- */
 
+/*-------------The Cards Section---------------*/
+.cards {
+  padding: 4rem 5rem;
+  margin-bottom: 15rem;
+}
 
+.cards .flex--row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.card {
+  box-shadow: 0px -5px 36px -5px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px -5px 36px -5px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px -5px 36px -5px rgba(0, 0, 0, 0.43);
+  padding: 5rem 7rem;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+}
+.card .card__heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+.card--text {
+  width: 50%;
+  padding-right: 2rem;
+}
+.card img {
+  width: 45%;
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    padding: 2rem 3rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column-reverse !important;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 4rem;
+  }
+  .card--text {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .card .card__heading {
+    font-size: 3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card--text p {
+    margin-bottom: 2rem;
+  }
+  .card img {
+    width: 100%;
+  }
+}
+
+/* ---------------End of the Cards Section------------- */
 
 /* box-shadow: -1px 2px 55px -10px rgba(0,0,0,0.64);
 -webkit-box-shadow: -1px 2px 55px -10px rgba(0,0,0,0.64);

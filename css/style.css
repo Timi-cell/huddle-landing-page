@@ -142,6 +142,7 @@ body {
 /*-------------The Cards Section---------------*/
 .cards {
   padding: 4rem 5rem;
+  margin-top: 10rem;
   margin-bottom: 15rem;
 }
 

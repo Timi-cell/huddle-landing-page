@@ -225,6 +225,7 @@ body {
 
 .cutout__heading {
   font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 .cutout__button {
@@ -237,16 +238,120 @@ body {
   }
 }
 
-/* box-shadow: -1px 2px 55px -10px rgba(0,0,0,0.64);
--webkit-box-shadow: -1px 2px 55px -10px rgba(0,0,0,0.64);
--moz-box-shadow: -1px 2px 55px -10px rgba(0,0,0,0.64); 
+/* ------------The Footer Section----------- */
 
-.attribution {
+.footer {
+  background: var(--color-secondary);
+  color: var(--color--pale-cyan);
+  padding: 7rem 7rem;
+}
+
+.footer--content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.first {
+  width: 350px;
+  padding: 1rem;
+}
+.second a,
+.third a {
+  text-decoration: none;
+  transition: all 0.2 ease-in;
+}
+
+.second a:hover,
+.third a:hover {
+  text-decoration: underline;
+}
+.first path {
+  fill: var(--color--pale-cyan);
+}
+.first .first__text {
+  line-height: 1.7;
+}
+.footer li {
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 1.2rem;
+  margin-right: 2.3rem;
+  padding: 1rem;
+}
+
+.fourth .icon {
   font-size: 1.5rem;
+  border: 1px solid var(--color--pale-cyan);
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.footer p {
+  font-size: 1.2rem;
+  margin-top: 10rem;
+}
+.footer .attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 3rem;
   color: var(--color-light-cyan);
   line-height: 1.5;
 }
-.attribution a {
+.footer a {
   color: var(--color-light-cyan);
 }
-*/
+
+@media screen and (max-width: 1110px) {
+  .footer--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .footer--column svg {
+    width: 85%;
+    max-width: 350px;
+    min-width: 250px;
+  }
+
+  .footer--column .icons {
+    margin-top: 6rem;
+  }
+
+  .footer--column .icon {
+    font-size: 3rem;
+  }
+  .footer--column .first {
+    width: 100%;
+  }
+
+  .footer--column li {
+    font-size: 1.65rem;
+  }
+
+  .footer--column p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .footer .attribution {
+    font-size: 1.4rem;
+  }
+
+  .footer--column .fourth {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* -----------End of the Footer Section-------------- */

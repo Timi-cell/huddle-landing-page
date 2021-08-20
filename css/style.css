@@ -325,6 +325,9 @@ body {
     min-width: 250px;
   }
 
+  .footer--column .first__text {
+    width: 100%;
+  }
   .footer--column .icons {
     margin-top: 6rem;
   }

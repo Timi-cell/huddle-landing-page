@@ -13,6 +13,7 @@
 }
 html {
   font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1,
@@ -20,6 +21,10 @@ h2 {
   font-family: "Poppins", sans-serif;
   color: var(--color-secondary);
   font-weight: 600;
+}
+
+:focus {
+  outline: none !important;
 }
 
 button {
